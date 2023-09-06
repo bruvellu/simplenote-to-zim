@@ -1,6 +1,6 @@
 # :spiral_notepad: Simplenote to Zim
 
-A simple script to convert your notes from Simplenote to Zim Desktop Wiki.
+A simple script to convert your notes from [Simplenote](https://simplenote.com/) to [Zim Desktop Wiki](https://zim-wiki.org/).
 
 ## Steps
 
@@ -11,14 +11,12 @@ A simple script to convert your notes from Simplenote to Zim Desktop Wiki.
 
 ## Details
 
-The script will read the JSON, parsing the notes’ contents and metadata, and will export them to the same directory in the [Zim Wiki format](https://zim-wiki.org/manual/Help/Wiki_Syntax.html).
-It creates the file header with the proper timestamp.
-Uses the first line of the note as the title, removing the header markup (`#`).
-Converts Simplenote tags to `@tag` format and inserts them below the title separated by `/`.
-And the script also sanitizes the filename following Zim settings.
-Please see the example output below.
+The script reads the Simplenote JSON file, extracts the notes’ contents and metadata, and exports them to the [Zim Wiki format](https://zim-wiki.org/manual/Help/Wiki_Syntax.html) in the same directory.
+It generates a file header with a timestamp, sets the note’s title to the first line of the content, and converts existing tags to the Zim `@tag` format.
+The script also sanitizes the filename according to Zim settings.
+Please refer to the example output below.
 
-Note that notes inside Simplenote’s trash won’t be converted.
+Note that notes in Simplenote's trash are not converted.
 
 ## Example
 
