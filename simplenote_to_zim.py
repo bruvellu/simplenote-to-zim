@@ -9,7 +9,7 @@ Usage: simplenote_to_zim.py notes.json
 Author: Bruno C. Vellutini - https://brunovellutini.com
 
 Curiosity: This script was created using AI. It was an interesting
-experience. For the step-by-step with prompts please see:
+experience. For the step-by-step of the prompts please see:
 https://www.perplexity.ai/search/fa92da50-2546-4da9-a468-9a215766fa92
 '''
 
@@ -41,10 +41,10 @@ def format_creation_date_iso(creation_date):
     return formatted_date
 
 def format_tags(tags):
-    # Format the tags with "@" before each tag and separate with " / "
+    # Format the tags with "@" before each tag and separate with " "
     formatted_tags = [f"@{tag}" for tag in tags]
     
-    return " / ".join(formatted_tags)
+    return " ".join(formatted_tags)
 
 def sanitize_filename(filename):
     # Remove special characters and replace spaces with underscores
@@ -71,7 +71,9 @@ def convert_to_zim(simplenote_file):
 
         # Remove the title from the content
         lines = content.split('\n')[1:]
-        content = '\n'.join(lines).strip()  # Remove leading/trailing whitespace
+
+        # Remove leading/trailing whitespace
+        content = '\n'.join(lines).strip()
 
         # Sanitize the filename
         sanitized_title = sanitize_filename(title)
@@ -90,9 +92,11 @@ def convert_to_zim(simplenote_file):
             if 'tags' in note:
                 tags = note['tags']
                 formatted_tags = format_tags(tags)
-                f.write(f"{formatted_tags}\n\n")  # Add newline after tags
+                # Add newline after tags
+                f.write(f"{formatted_tags}\n\n")
 
-            f.write(f"{content}\n")  # Remove extra blank line
+            # Remove extra blank line
+            f.write(f"{content}\n")
 
     print("Conversion completed successfully!")
 
