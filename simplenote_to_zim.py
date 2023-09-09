@@ -8,9 +8,8 @@ Usage: simplenote_to_zim.py notes.json
 
 Author: Bruno C. Vellutini - https://brunovellutini.com
 
-Curiosity: This script was created using AI. It was an interesting
-experience. For the step-by-step of the prompts please see:
-https://www.perplexity.ai/search/fa92da50-2546-4da9-a468-9a215766fa92
+Curiosity: An AI assisted me in creating this script. It was an interesting
+experience. See: https://brunovellutini.com/posts/simplenote-to-zim/
 '''
 
 import sys
