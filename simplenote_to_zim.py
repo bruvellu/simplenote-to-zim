@@ -8,9 +8,12 @@ Usage: simplenote_to_zim.py notes.json
 
 Author: Bruno C. Vellutini - https://brunovellutini.com
 
-Curiosity: An AI assisted me in creating this script. It was an interesting
-experience. See: https://brunovellutini.com/posts/simplenote-to-zim/
+Curiosity: I created this script with AI assistance. It was an interesting
+experience. See https://brunovellutini.com/posts/simplenote-to-zim/
 '''
+
+# TODO: Convert markdown formatting to Zim format (bold, italics, etc)
+# TODO: Deal with spaces and special characters in tags
 
 import sys
 import json
