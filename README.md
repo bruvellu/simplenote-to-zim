@@ -25,10 +25,10 @@ Content-Type: text/x-zim-wiki
 Wiki-Format: zim 0.6
 Creation-Date: 2023-01-19T09:11:27+01:00
 
-====== Title of the page ======
+====== Title of the note ======
 Created Thursday 19 January 2023
 
-@onetag / @another 
+@tagthis @tagthat
 
-This is the content of the note.
+Contents of the note.
 ```
