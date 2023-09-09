@@ -18,7 +18,7 @@ Please refer to the example output below.
 
 Note that notes in Simplenote's trash are not converted.
 
-## Example
+## Output
 
 ```
 Content-Type: text/x-zim-wiki
